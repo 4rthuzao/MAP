@@ -16,4 +16,9 @@ public class VisitorCalculaArea implements VisitorIF{
 	public String visitaTriangulo(Triangulo triangulo) {
 		return "A área do Triangulo é: " + (triangulo.getAltura() * triangulo.getBase()) / 2;
 	}
+
+	@Override
+	public String visitaTrapezio(Trapezio trapezio) {
+		return "A área do Trapezio é: " + ((trapezio.getBaseInferior() + trapezio.getBaseSuperior()) * trapezio.getAltura()) / 2;
+	}
 }

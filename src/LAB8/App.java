@@ -6,6 +6,7 @@ public class App {
 		Circulo circulo = new Circulo(15);
 		Retangulo retangulo = new Retangulo(16, 8);
 		Triangulo triangulo = new Triangulo(10, 5);
+		Trapezio trapezio = new Trapezio(15, 20, 10);
 		
 		//criando o visitor para calcular a área...
 		VisitorIF visitaCA = new VisitorCalculaArea();
@@ -13,6 +14,7 @@ public class App {
 		circulo.aceitaVisita(visitaCA);
 		retangulo.aceitaVisita(visitaCA);
 		triangulo.aceitaVisita(visitaCA);
+		trapezio.aceitaVisita(visitaCA);
 		System.out.println();
 
 		//Criando o Visitor para calcular a Perimetro das figuras...
@@ -21,6 +23,7 @@ public class App {
 		circulo.aceitaVisita(visitaCA);
 		retangulo.aceitaVisita(visitaCA);
 		triangulo.aceitaVisita(visitaCA);
+		trapezio.aceitaVisita(visitaCA);
 		System.out.println();
 		
 		//Criando o Visitor para desenhar figuras geometricas...
@@ -29,6 +32,7 @@ public class App {
 		circulo.aceitaVisita(visitaCA);
 		retangulo.aceitaVisita(visitaCA);
 		triangulo.aceitaVisita(visitaCA);
+		trapezio.aceitaVisita(visitaCA);
 		System.out.println();
 
 		//Criando o Visitor para Maximizar as figuras...
@@ -37,6 +41,7 @@ public class App {
 		circulo.aceitaVisita(visitaCA);
 		retangulo.aceitaVisita(visitaCA);
 		triangulo.aceitaVisita(visitaCA);
+		trapezio.aceitaVisita(visitaCA);
 				
 	}
 }

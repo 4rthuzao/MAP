@@ -16,4 +16,9 @@ public class VisitorDesenhar implements VisitorIF{
 	public String visitaTriangulo(Triangulo t) {
 		return "** Desenhando um Triangulo **";
 	}
+
+	@Override
+	public String visitaTrapezio(Trapezio trapezio) {
+		return "** Desenhando um Trapezio **";
+	}
 }

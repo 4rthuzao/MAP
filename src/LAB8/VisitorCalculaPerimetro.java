@@ -16,4 +16,9 @@ public class VisitorCalculaPerimetro implements VisitorIF{
 	public String visitaTriangulo(Triangulo triangulo) {
 		return "O perimetro do Triangulo é: " + ((triangulo.getAltura() * 2) + triangulo.getBase());
 	}
+
+	@Override
+	public String visitaTrapezio(Trapezio trapezio) {
+		return "Perimetro do Trapezio: " + ((trapezio.getAltura() * 2) + trapezio.getBaseInferior() + trapezio.getBaseSuperior());
+	}
 }
